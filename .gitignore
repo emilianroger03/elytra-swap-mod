@@ -1,0 +1,11 @@
+.gradle/
+build/
+out/
+.idea/
+*.iml
+*.class
+*.log
+.env
+.env.*
+decompiled-autopilot/
+cfr.jar

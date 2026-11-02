@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "elytra-swap",
+  "version": "1.0.0",
+  "name": "Elytra Swap",
+  "description": "Auto-swaps elytra/chestplate while flying for zero durability loss",
+  "authors": ["Emilian"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.emilian.elytraswap.ElytraSwapMod"]
+  },
+  "mixins": [
+    "elytraswap.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "fabric-api": "*"
+  }
+}

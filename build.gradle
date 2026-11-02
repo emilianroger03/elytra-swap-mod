@@ -1,0 +1,29 @@
+plugins {
+    id 'fabric-loom' version '1.16.3'
+    id 'java'
+}
+
+version = "1.0.0"
+group = "dev.emilian"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:1.21.11"
+    mappings "net.fabricmc:yarn:1.21.11+build.5:v2"
+    modImplementation "net.fabricmc:fabric-loader:0.16.14"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:0.141.3+1.21.11"
+    modCompileOnly files("libs/fabric-elytra-autopilot-1.21.9-3.3.1.jar")
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = "UTF-8"
+    options.release = 21
+}
